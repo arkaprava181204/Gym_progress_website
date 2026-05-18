@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#"
+AutoEventWireup="true"
+CodeBehind="Adminmst.master.cs"
+Inherits="URprogress.Admin.Adminmst" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+
+    <title>UR Progress</title>
+
+    <meta charset="UTF-8" />
+
+    <!-- BOOTSTRAP -->
+
+    <link href="../content/bootstrap.min.css"
+          rel="stylesheet" />
+
+    <!-- MASTER CSS -->
+
+    <link href="../content/stylesmst.css?<%= DateTime.Now.Ticks %>"
+          rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <!-- JQUERY -->
+
+    <script src="../scripts/jquery-3.0.0.min.js"></script>
+
+    <script src="../scripts/popper.min.js"></script>
+
+    <script src="../scripts/bootstrap.min.js"></script>
+
+    <!-- SCRIPT -->
+
+    <script>
+
+$(document).ready(function () {
+
+    // OPEN AUTH
+
+    $(".auth-btn").click(function () {
+
+        $(".auth-dropdown").slideToggle(200);
+
+    });
+
+    // SIGN IN
+
+    $(".login-btn").click(function () {
+
+        $(".auth-btn").hide();
+
+        $(".profile-icon").fadeIn();
+
+        $(".auth-dropdown").slideUp();
+
+    });
+
+    // SIGN UP
+
+    $(".signup-btn").click(function () {
+
+        $(".auth-btn").hide();
+
+        $(".profile-icon").fadeIn();
+
+        $(".auth-dropdown").slideUp();
+
+    });
+
+});
+
+</script>
+
+    <!-- CHILD PAGE HEAD -->
+
+    <asp:ContentPlaceHolder ID="head"
+                            runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+    <form id="form1"
+          runat="server">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <h1>
+
+                UR PROGRESS
+
+            </h1>
+
+            <!-- SIGN BUTTON -->
+
+            <div class="auth-btn">
+
+                Sign In / Sign Up
+
+            </div>
+
+            <!-- PROFILE ICON -->
+
+            <div class="profile-icon"
+                 style="display:none;">A</div>
+
+                <i class="fas fa-user"></i>
+
+            </div>
+
+            <!-- DROPDOWN -->
+
+            <div class="auth-dropdown">
+
+                <input type="text"
+                       placeholder="Enter Email" />
+
+                <input type="password"
+                       placeholder="Enter Password" />
+
+                <button type="button"
+                        class="login-btn">
+
+                    Sign In
+
+                </button>
+
+                <button type="button"
+                        class="signup-btn">
+
+                    Sign Up
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- CHILD PAGE -->
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1"
+                                runat="server">
+
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+</body>
+
+</html>
