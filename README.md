@@ -1,2 +1,24 @@
-# Gym_progress_website
-UR Progress is a fitness tracking web app built with ASP.NET, C#, SQL Server, JavaScript, AJAX, HTML, and CSS. Users can create workouts, manage exercises, track reps/sets, and calculate nutrition values through an interactive UI.
+# UR Progress
+
+UR Progress is a modern fitness and workout tracking web application designed to help users manage workouts, exercises, nutrition, and progress efficiently through an interactive interface.
+
+## Features
+
+- Exercise tracking
+- Workout management
+- Reps and sets updates
+- Nutrition calculator
+- Dynamic AJAX functionality
+- Responsive modern UI
+- SQL Server database integration
+
+## Built With
+
+- ASP.NET Web Forms
+- C#
+- SQL Server
+- JavaScript
+- jQuery AJAX
+- HTML
+- CSS
+- Bootstrap
