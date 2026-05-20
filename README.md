@@ -23,4 +23,4 @@ UR Progress is a modern fitness and workout tracking web application designed to
 - CSS
 - Bootstrap
 
-live webpage link;- http://urprogress.somee.com/Admin/Adminhome.aspx
+live webpage link:- http://urprogress.somee.com/
